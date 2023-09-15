@@ -1,7 +1,8 @@
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 
-function Expenses(props) {
+//sintassi alternativa per scrivere le funzioni (componenti) usando le arrow function
+const Expenses = (props) => {
 
     return (
         <Card className="expenses">
