@@ -34,7 +34,7 @@ function ExpenseForm(props) {
         //creo un nuovo oggetto che contiene i dati inseriti dal form, ovvero un nuovo oggetto expense
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate)
         };
         //lancio l'evento, la funzione creata nel component parent(NewExpense) per potergli passare i dati del form
