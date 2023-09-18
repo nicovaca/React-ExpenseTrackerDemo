@@ -29,10 +29,14 @@ function App() {
         },
     ];
 
+    const addExpenseHandler = expense => {
+        console.log('in App.js');
+        console.log(expense);
+    }
 
     return (
         <div>
-            <NewExpense />
+            <NewExpense onAddExpense={addExpenseHandler}/>
             <Expenses items={expenses} />
             {/*{expenses.map(p => <ExpenseItem title={p.title} amount={p.amount} date={p.date}></ExpenseItem>)}*/}
         </div>
